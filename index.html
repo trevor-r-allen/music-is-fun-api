@@ -24,7 +24,7 @@
             <div class="col-12 bannerStyle">
                 <p>Music is Fun</p>
             </div>
-            <div class="offset-8 col-4">
+            <div class="col-4">
                 <form onsubmit="app.songsController.search(event)">
                     <input type="text" class="form-control" name="query" placeholder="Search For Music" />
                     <button class="btn btn-success mt-1 form-control" type="submit">
@@ -35,13 +35,19 @@
         </section>
 
         <section class="row">
-            <div class="col-6">
+            <div class="col-3">
                 <h3 class="text-center">Search Results</h3>
                 <div id="songs" class="col-12 m-0">
                     <!-- template to generate -->
                 </div>
             </div>
             <div class="col-6">
+                <h3 class="text-center">Selected Song</h3>
+                <div id="activeSong" class="col-12 m-0">
+                    <!-- template to generate -->
+                </div>
+            </div>
+            <div class="col-3">
                 <h3 class="text-center">Playlist</h3>
                 <div class="col-12 m-0" id="playlist">
                     <!-- template for playlist -->
